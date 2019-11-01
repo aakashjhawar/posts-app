@@ -11,22 +11,12 @@ import {CourseService} from './course.service';
             {{course}}
           </li>
         </ul>
-
-        <h2>Authors</h2>
-        {{titleAuthors}}
-        <ul>
-          <li *ngFor="#author of authors">
-            {{author}}
-          </li>
-        </ul>
     `,
     providers: [CourseService]
 })
 export class CoursesComponent {
   titleCourses = "The title of course page."; 
-  titleAuthors = "The title of author page";
   courses;
-  authors = ['a1', 'a2', 'a3']
 
   constructor(courseService: CourseService) {
     this.courses = courseService.getCourses()

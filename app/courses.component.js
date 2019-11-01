@@ -24,14 +24,12 @@ System.register(['angular2/core', './course.service'], function(exports_1, conte
             CoursesComponent = (function () {
                 function CoursesComponent(courseService) {
                     this.titleCourses = "The title of course page.";
-                    this.titleAuthors = "The title of author page";
-                    this.authors = ['a1', 'a2', 'a3'];
                     this.courses = courseService.getCourses();
                 }
                 CoursesComponent = __decorate([
                     core_1.Component({
                         selector: 'courses',
-                        template: "\n        <h2>Courses</h2>\n        {{titleCourses}}\n        <ul>\n          <li *ngFor=\"#course of courses\">\n            {{course}}\n          </li>\n        </ul>\n\n        <h2>Authors</h2>\n        {{titleAuthors}}\n        <ul>\n          <li *ngFor=\"#author of authors\">\n            {{author}}\n          </li>\n        </ul>\n    ",
+                        template: "\n        <h2>Courses</h2>\n        {{titleCourses}}\n        <ul>\n          <li *ngFor=\"#course of courses\">\n            {{course}}\n          </li>\n        </ul>\n    ",
                         providers: [course_service_1.CourseService]
                     }), 
                     __metadata('design:paramtypes', [course_service_1.CourseService])
