@@ -20,7 +20,7 @@
     "zone.js": "0.16.2"
   },
   "devDependencies": {
-    "concurrently": "^9.2.1",
+    "concurrently": "^10.0.0",
     "lite-server": "^2.6.1",
     "typescript": "^6.0.3"
   }
